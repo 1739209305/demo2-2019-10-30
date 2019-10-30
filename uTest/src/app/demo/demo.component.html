@@ -1,0 +1,35 @@
+<div id="all">
+  <div id="slider" (mousedown)="resize.emit()">   
+  </div>
+  <div id="demo">
+    <mat-toolbar>Memo</mat-toolbar>
+    <mat-card>
+      <div id="discuss">
+        <mat-form-field class="example-full-width">
+          <mat-label>ql 95263</mat-label>
+              <textarea matInput value="Copyright 2019 Google Inc.All Rights Reserved" disabled></textarea>
+          </mat-form-field>   
+          <mat-form-field class="example-full-width">
+            <mat-label>ql 95263</mat-label>
+                           <textarea matInput value="Google is a container component that wraps and formats a series of line items." disabled></textarea>
+          </mat-form-field>   
+          <mat-form-field class="example-full-width">
+            <mat-label>ql 95263</mat-label>
+             <textarea matInput value="Use mat-nav-list tags for navigation lists(i.e.lists that have anchor tags.)" disabled></textarea>
+        </mat-form-field>
+      </div>
+
+      <mat-form-field class="example-full-width" id="MemoCod">
+        <textarea matInput #message maxlength="256" placeholder="Your comments" (keyup.enter)="keyUp()" id="comments"></textarea>
+        <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    </mat-form-field>
+    </mat-card>
+  </div>
+</div>
+
+
+
+
+
+
+
